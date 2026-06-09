@@ -20,6 +20,7 @@ Pricing:
 
 Required:
 
+- `oauth`
 - `crm.objects.contacts.read`
 - `forms`
 
@@ -27,7 +28,7 @@ Optional or Enterprise-gated:
 
 - `communication_preferences.statuses.batch.read`
 
-The app never requests write scopes.
+The `oauth` scope is HubSpot's install-grant scope. The app never requests write scopes.
 
 ## Local Development
 

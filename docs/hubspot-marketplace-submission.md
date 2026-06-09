@@ -10,6 +10,13 @@
 - Setup guide URL: `https://hubspot-sendability-consent-scanner.vercel.app/setup`
 - Logo source: `public/marketplace/logo.svg`
 
+## HubSpot Registration
+
+- Developer account: `Radom UG` (`148666587`)
+- Project: `sendability-consent-scanner` (`202731473`)
+- App ID: `42181310`
+- Deployed HubSpot build: `#2`
+
 ## Listing Copy
 
 - App name: `Sendability Consent Scanner for HubSpot`
@@ -36,6 +43,7 @@ The app is intentionally read-only. It never edits contacts, changes subscriptio
 
 Required:
 
+- `oauth`
 - `crm.objects.contacts.read`
 - `forms`
 

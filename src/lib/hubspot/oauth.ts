@@ -1,7 +1,7 @@
 export const HUBSPOT_AUTHORIZE_URL = "https://app.hubspot.com/oauth/authorize";
 export const HUBSPOT_TOKEN_URL = "https://api.hubapi.com/oauth/v1/token";
 
-export const REQUIRED_SCOPES = ["crm.objects.contacts.read", "forms"] as const;
+export const REQUIRED_SCOPES = ["oauth", "crm.objects.contacts.read", "forms"] as const;
 export const OPTIONAL_SCOPES = ["communication_preferences.statuses.batch.read"] as const;
 
 export type HubSpotTokenResponse = {
@@ -13,7 +13,7 @@ export type HubSpotTokenResponse = {
 };
 
 export function assertReadOnlyScopes(scopes: readonly string[]): void {
-  const unsafe = scopes.find((scope) => scope.includes(".write") || scope === "oauth");
+  const unsafe = scopes.find((scope) => scope.includes(".write"));
   if (unsafe) {
     throw new Error(`Unsafe HubSpot scope rejected: ${unsafe}`);
   }
