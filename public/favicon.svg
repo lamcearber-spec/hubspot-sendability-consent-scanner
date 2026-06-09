@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sendability Consent Scanner">
+  <rect width="64" height="64" rx="14" fill="#101828"/>
+  <path d="M15 34.5 26 45l23-27" fill="none" stroke="#7dd3fc" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="47" cy="17" r="6" fill="#f59e0b"/>
+</svg>

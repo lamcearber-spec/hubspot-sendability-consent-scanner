@@ -1,0 +1,26 @@
+{
+  "uid": "hubspot_sendability_consent_scanner",
+  "type": "app",
+  "config": {
+    "name": "Sendability Consent Scanner for HubSpot",
+    "description": "Read-only consent, subscription, form mapping, and deliverability scan for HubSpot marketing contacts.",
+    "distribution": "marketplace",
+    "auth": {
+      "type": "oauth",
+      "redirectUrls": ["https://hubspot-sendability-consent-scanner.vercel.app/api/hubspot/callback"],
+      "requiredScopes": ["crm.objects.contacts.read", "forms"],
+      "optionalScopes": ["communication_preferences.statuses.batch.read"],
+      "conditionallyRequiredScopes": []
+    },
+    "permittedUrls": {
+      "fetch": ["https://api.hubapi.com"],
+      "iframe": [],
+      "img": []
+    },
+    "support": {
+      "supportEmail": "support@konverter-pro.de",
+      "documentationUrl": "https://hubspot-sendability-consent-scanner.vercel.app/setup",
+      "supportUrl": "https://hubspot-sendability-consent-scanner.vercel.app/support"
+    }
+  }
+}

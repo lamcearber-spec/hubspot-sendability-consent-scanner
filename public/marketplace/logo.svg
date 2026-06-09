@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sendability Consent Scanner logo">
+  <rect width="512" height="512" rx="96" fill="#f6f7f9"/>
+  <rect x="58" y="58" width="396" height="396" rx="72" fill="#101828"/>
+  <path d="M128 276l76 73 180-186" fill="none" stroke="#7dd3fc" stroke-width="44" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="366" cy="142" r="42" fill="#f59e0b"/>
+  <path d="M139 390h235" stroke="#d7dde5" stroke-width="18" stroke-linecap="round"/>
+</svg>
