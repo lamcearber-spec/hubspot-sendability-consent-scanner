@@ -16,6 +16,7 @@
 - Project: `sendability-consent-scanner` (`202731473`)
 - App ID: `42181310`
 - Deployed HubSpot build: `#2`
+- Listing status: blocked until HubSpot records at least three active, unique installs from unaffiliated production accounts.
 
 ## Listing Copy
 
