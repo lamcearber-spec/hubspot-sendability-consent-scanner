@@ -17,6 +17,7 @@
 - App ID: `42181310`
 - Deployed HubSpot build: `#2`
 - Listing status: blocked until HubSpot records at least three active, unique installs from unaffiliated production accounts.
+- Install-gate runbook: `docs/friendly-install-kit.md`
 
 ## Listing Copy
 

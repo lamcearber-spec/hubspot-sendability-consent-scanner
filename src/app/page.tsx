@@ -1,9 +1,19 @@
+import { cookies } from "next/headers";
 import { SendabilityDashboard } from "@/components/SendabilityDashboard";
+import { scanHubSpotAccount } from "@/lib/hubspot/client";
 import { buildInstallUrl } from "@/lib/hubspot/oauth";
+import { readAccessTokenFromCookie } from "@/lib/hubspot/session";
 import { demoReport } from "@/lib/sendability/fixtures";
 
-export default function Page() {
+export default async function Page() {
   const installUrl = buildOptionalInstallUrl();
+  const cookieStore = await cookies();
+  const accessToken = readAccessTokenFromCookie(cookieStore.toString());
+
+  if (accessToken) {
+    const report = await scanHubSpotAccount(accessToken);
+    return <SendabilityDashboard report={report} installUrl={installUrl} mode="connected" />;
+  }
 
   return <SendabilityDashboard report={demoReport} installUrl={installUrl} mode="fixture" />;
 }
